@@ -27,22 +27,29 @@ const AboutUs: React.FC = () => {
 
   const team = [
     {
-      name: 'Aman Jaiswal',
+      name:'Mohd. Taufik',
       role: 'Founder & Director',
-      experience: '15+ years in Tech Education',
-      expertise: 'Full Stack Development, AI/ML'
-    },
-    {
-      name:'Aditya Gupta',
-      role: 'Lead Instructor - Web Development',
-      experience: '8+ years at Google, Microsoft',
+      experience: '3+ years at Google, Microsoft',
       expertise: 'React, Node.js, Cloud Technologies'
     },
     {
-      name: 'Vikram Singh',
-      role: 'Data Science Lead',
-      experience: '10+ years in Data Analytics',
-      expertise: 'Python, Machine Learning, Big Data'
+      name: 'Aman Jaiswal',
+      role: 'Co-Founder & Director',
+      experience: '3+ years in Tech Education',
+      expertise: 'Full Stack Development, AI/ML'
+    },
+    
+    {
+      name:'Vijau Kumar',
+      role: 'R&N Department',
+      experience: '4+ years in R&N Department',
+      expertise: 'AutoCat, Solid Work, Catia'
+    }
+    {
+      name:'Sufiyan Jafri',
+      role: 'R&N Department',
+      experience: '5+ years in R&N Department',
+      expertise: 'AutoCat, Solid Work, Catia'
     }
   ];
 
