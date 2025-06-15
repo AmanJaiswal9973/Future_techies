@@ -33,7 +33,7 @@ const AboutUs: React.FC = () => {
       expertise: 'Full Stack Development, AI/ML'
     },
     {
-      name: 'Sneha Agarwal',
+      name:'Aditya Gupta',
       role: 'Lead Instructor - Web Development',
       experience: '8+ years at Google, Microsoft',
       expertise: 'React, Node.js, Cloud Technologies'
