@@ -44,7 +44,7 @@ const AboutUs: React.FC = () => {
       role: 'R&N Department',
       experience: '4+ years in R&N Department',
       expertise: 'AutoCat, Solid Work, Catia'
-    }
+    },
     {
       name:'Sufiyan Jafri',
       role: 'R&N Department',
