@@ -192,7 +192,7 @@ const ContactUs: React.FC = () => {
                   <Phone className="h-5 w-5" />
                 </a>
                 <a
-                  href="https://wa.me/917207899689?text=Hi%2C%20I%20need%20assistance"
+                  href="https://wa.me/917307899689?text=Hi%2C%20I%20need%20assistance"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-white/20 hover:bg-white/30 p-3 rounded-lg transition-colors"
