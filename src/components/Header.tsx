@@ -1,5 +1,6 @@
+/* Updated Header.tsx */
 import React, { useState, useEffect } from "react";
-import { Menu, X, Code } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import icon from "../assets/images/icon.png";
 
 interface HeaderProps {
@@ -40,14 +41,13 @@ const Header: React.FC<HeaderProps> = ({
       }`}
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16 lg:h-20">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <div className="bg-white-600 p-2 rounded-lg">
-              {/* <Code className="h-6 w-6 text-white" /> */}
-              <img src={icon} alt="Hero" className="h-20 w-20" />
+            <div className="p-2 rounded-lg">
+              <img src={icon} alt="Hero" className="h-14 w-14 sm:h-16 sm:w-16" />
             </div>
-            <span className="text-2xl font-bold transition-colors flex space-x-1">
+            <span className="text-2xl font-bold flex space-x-1">
               <span className={isScrolled ? "text-blue-600" : "text-blue-300"}>
                 Future
               </span>
@@ -57,7 +57,7 @@ const Header: React.FC<HeaderProps> = ({
             </span>
           </div>
 
-          {/* Desktop Navigation */}
+          {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center space-x-8">
             {navItems.map((item) => (
               <button
@@ -84,28 +84,20 @@ const Header: React.FC<HeaderProps> = ({
             </button>
           </nav>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu */}
           <button
             className="lg:hidden p-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
-              <X
-                className={`h-6 w-6 ${
-                  isScrolled ? "text-gray-900" : "text-white"
-                }`}
-              />
+              <X className={`h-6 w-6 ${isScrolled ? "text-gray-900" : "text-white"}`} />
             ) : (
-              <Menu
-                className={`h-6 w-6 ${
-                  isScrolled ? "text-gray-900" : "text-white"
-                }`}
-              />
+              <Menu className={`h-6 w-6 ${isScrolled ? "text-gray-900" : "text-white"}`} />
             )}
           </button>
         </div>
 
-        {/* Mobile Menu */}
+        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200 py-4">
             {navItems.map((item) => (
